@@ -14,7 +14,7 @@
 
     <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
         <!-- Navbar -->
-        <header class="bg-white shadow dark:bg-gray-800">
+        <header class="bg-white shadow-md dark:bg-gray-800">
             <div class="container mx-auto p-5 flex justify-between items-center">
                 <!-- Logo/Title -->
                 <h1 class="text-lg font-bold">Agil Aryaddinata Abbas</h1>
@@ -55,49 +55,53 @@
         </header>
 
 
-
         <!-- Main Content -->
-        <main class="container mx-auto my-10 p-5 flex-grow">
+        <main class="container mx-auto p-5 flex-grow">
 
             <!-- Hero Section -->
-            <section class="text-gray-600 dark:text-gray-300 body-font">
-                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <section class="text-gray-600 dark:text-gray-300 body-font h-screen">
+                <div class="container mx-auto flex h-full px-5 md:flex-row flex-col items-center">
+                    <!-- Left Column: Text Content -->
                     <div
-                        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        class="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-100">
-                            Before they sold out
-                            <br class="hidden lg:inline-block">readymade gluten
+                            Hello guys, i am
+                            <br class="hidden lg:inline-block">Agil Aryaddinata Abbas
                         </h1>
                         <p class="mb-8 leading-relaxed text-gray-700 dark:text-gray-300">
-                            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos
-                            poke beard tote bag.
+                            Web Developer and Product Designer, currently studying Informatics Engineering.
                         </p>
-                        <div class="flex justify-center">
-                            <button
-                                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 dark:bg-indigo-700 dark:hover:bg-indigo-800 rounded text-lg">
-                                Button
-                            </button>
-                            <button
-                                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded text-lg">
-                                Button
-                            </button>
+                        <div class="flex justify-start">
+                            <a href="#about"
+                                class="inline-flex text-white px-3 py-2 bg-gray-400 border-0 focus:outline-none hover:bg-blue-500 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-blue-500 rounded text-lg">
+                                Read More
+                            </a>
                         </div>
                     </div>
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+
+                    <!-- Right Column: Image Content -->
+                    <div class="relative flex justify-center items-center md:w-1/2 w-full">
+                        <!-- Back Image -->
+                        <div class="lg:max-w-lg lg:w-full w-full">
+                            <img class="object-cover object-center rounded h-full" alt="hero" src="./images/hero.png">
+                        </div>
+                        <!-- Front Image -->
+                        <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:max-w-lg lg:w-full w-full">
+                            <img class="object-cover object-center rounded h-full" alt="arya" src="./images/arya.png">
+                        </div>
                     </div>
+
                 </div>
             </section>
 
             <!-- About -->
             <section id="about" class="text-gray-600 dark:text-gray-300 body-font">
-
-                <div class="container px-5 pt-20 mx-auto flex flex-col">
+                <div class="container px-5 pt-16 mx-auto flex flex-col">
                     <div class="lg:w-full w-full lg:mb-0 text-center">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
-                            About Me
+                            <i class="fa-regular fa-address-card"></i> About Me
                         </h1>
-                        <div class="mt-2 h-1 w-20 bg-indigo-500 rounded mx-auto"></div>
                     </div>
 
                     <div class="lg:w-4/6 mx-auto">
@@ -106,120 +110,157 @@
                             <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                                 <div
                                     class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-300">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
+                                    <img src="./images/arya.png" class="w-28 " alt="aryaddinata">
                                 </div>
                                 <div class="flex flex-col items-center text-center justify-center">
                                     <h2 class="font-medium title-font mt-4 text-gray-900 dark:text-gray-100 text-lg">
-                                        Phoebe
-                                        Caulfield</h2>
+                                        Agil Aryaddinata Abbas</h2>
                                     <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                                    <p class="text-base text-gray-600 dark:text-gray-400">Raclette knausgaard hella
-                                        meggs normcore
-                                        williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+                                    <p class="text-base text-gray-600 dark:text-gray-400">Web Developer and Product
+                                        Designer, currently studying Informatics Engineering. Focused on interfaces and
+                                        experiences, working remotely from North Molucas, Indonesia.
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- About Description Section -->
                             <div
                                 class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 dark:border-gray-700 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                                <p class="leading-relaxed text-lg mb-4 text-gray-700 dark:text-gray-300">Meggings
-                                    portland
-                                    fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon
-                                    locavore
-                                    direct trade art party. Locavore small batch listicle gastropub farm-to-table
-                                    lumbersexual
-                                    salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar
-                                    sartorial,
-                                    disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist
-                                    forage
-                                    post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst
-                                    before they sold
-                                    out four loko. 3 wolf moon brooklyn.</p>
-                                <a
-                                    class="text-indigo-500 inline-flex items-center hover:text-indigo-600 dark:hover:text-indigo-400">Learn
-                                    More
+                                <p class="leading-relaxed text-lg mb-4 text-gray-700 dark:text-gray-300">My passion lies
+                                    in creating software that solves real-world problems and positively impacts people’s
+                                    lives.
+
+                                    Apart from software development, I am also an active student at Informatics
+                                    Engineering at Khairun University.
+
+                                    Whether it’s binge-watching my favorite anime series, cheering on Manchester City,
+                                    hanging out with friends, or
+                                    discovering new music in my favorite genres like RnB, UK Drill, and Chill Rap, I’m
+                                    always looking for ways to relax and
+                                    unwind.
+
+                                    Right now, I’m working on some exciting projects that I can’t wait to share with
+                                    you. But I’m always open to new
+                                    opportunities and collaborations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mx-auto px-5 py-10">
+                    <div class="flex justify-center">
+                        <div class="relative">
+                            <h1
+                                class="sm:text-3xl text-2xl font-medium title-font pb-10 text-gray-900 dark:text-gray-100">
+                                <i class="fa-solid fa-rocket"></i><span class="pl-3">Experience</span>
+                            </h1>
+
+                            <!-- Experience Item 1 -->
+                            <div class="flex items-center pb-10">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <i class="fa-solid fa-face-smile"></i>
+                                </div>
+                                <div class="ml-4 w-5/12">
+                                    <h2 class="font-semibold title-font text-xl mb-1 tracking-wider">Head of
+                                        Interest and
+                                        Talent Division</h2>
+                                    <h3 class="text-gray-500 mb-1">Himpunan Mahasiswa Teknik Informatika, Ternate,
+                                        Indonesia</h3>
+                                    <p class="leading-relaxed mb-2">02/2024 - Present</p>
+                                    <ul class="list-disc pl-5">
+                                        <li>Spearheading the HMTI x SKILL CLASS program to enhance technical skills
+                                            among students.</li>
+                                        <li>Organized technology education events reaching over 500 students.</li>
+                                        <li>Managed logistics and communication for smooth project execution.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Experience Item 2 -->
+                            <div class="flex items-center pb-10">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <i class="fa-solid fa-ghost"></i>
+                                </div>
+                                <div class="ml-4 w-5/12">
+                                    <h2 class="font-semibold title-font text-xl mb-1 tracking-wider">Front
+                                        End Web Developer
+                                    </h2>
+                                    <h3 class="text-gray-500 mb-1">Freelance, Ternate, Indonesia</h3>
+                                    <p class="leading-relaxed mb-2">06/2023 - Present</p>
+                                    <ul class="list-disc pl-5">
+                                        <li>Designed a responsive web interface, increasing user engagement by 25%.</li>
+                                        <li>Improved site performance by 20% through optimization.</li>
+                                        <li>Streamlined data management, enhancing accuracy and efficiency.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Experience Item 3 -->
+                            <div class="flex items-center pb-10">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <i class="fa-solid fa-house-laptop"></i>
+                                </div>
+                                <div class="ml-4 w-5/12">
+                                    <h2 class="font-semibold title-font text-xl mb-1 tracking-wider">Front
+                                        End Web Developer
+                                        & UI/UX Designer</h2>
+                                    <h3 class="text-gray-500 mb-1">Radya Digital, Bandung, Indonesia</h3>
+                                    <p class="leading-relaxed mb-2">09/2023 - 02/2024</p>
+                                    <ul class="list-disc pl-5">
+                                        <li>Developed web interfaces using ReactJS, improving user interaction by 20%.
+                                        </li>
+                                        <li>Created user experiences with Figma, boosting engagement by 15%.</li>
+                                        <li>Delivered the Productivity Tracker project, enhancing team productivity by
+                                            30%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Experience Item 4 -->
+                            <!-- <div class="flex items-center pb-10">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
-                                        viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
                                     </svg>
-                                </a>
-                            </div>
+                                </div>
+                                <div class="ml-4 w-5/12">
+                                    <h2 class="font-semibold title-font text-xl mb-1 tracking-wider">
+                                        Freelance Front End Web
+                                        Developer</h2>
+                                    <h3 class="text-gray-500 mb-1">Makasar Barat Village Information System, Ternate,
+                                        Indonesia</h3>
+                                    <p class="leading-relaxed mb-2">06/2023 - 07/2023</p>
+                                    <ul class="list-disc pl-5">
+                                        <li>Developed an integrated village information system, improving user interface
+                                            efficiency by
+                                            30%.</li>
+                                        <li>Served over 5,000 residents with a user-friendly design, achieving 90%
+                                            positive feedback.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                            <!-- Continue adding more experience items similarly -->
+
                         </div>
                     </div>
                 </div>
-
-                <div class="container px-5 py-10 mx-auto flex flex-wrap">
-                    <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 dark:bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-                            1</div>
-                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 dark:bg-indigo-800 text-indigo-500 dark:text-indigo-300 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                            </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2 class="font-medium title-font text-gray-900 dark:text-gray-100 mb-1 text-xl">
-                                    Shooting Stars</h2>
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-400">VHS cornhole pop-up,
-                                    try-hard 8-bit iceland
-                                    helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Duplicate the following block and modify for each step -->
-
-                    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 dark:bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-                            2</div>
-                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 dark:bg-indigo-800 text-indigo-500 dark:text-indigo-300 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                            </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2 class="font-medium title-font text-gray-900 dark:text-gray-100 mb-1 text-xl">The
-                                    Catalyzer</h2>
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-400">VHS cornhole pop-up,
-                                    try-hard 8-bit iceland
-                                    helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Continue with steps 3 and 4 similarly -->
-
-                </div>
-
             </section>
 
             <!-- Skill -->
             <section id="skill" class="text-gray-600 dark:text-gray-300 body-font">
-                <div class="container px-5 py-24 mx-auto">
+                <div class="container px-5 py-16 mx-auto">
                     <div class="lg:w-full w-full pb-10 lg:mb-0 text-center">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
-                            Skill
+                            <i class="fa-solid fa-code"></i> Skill
                         </h1>
-                        <div class="mt-2 h-1 w-20 bg-indigo-500 rounded mx-auto"></div>
                     </div>
                     <div class="flex flex-col text-center w-full mb-20">
 
@@ -233,9 +274,8 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/80x80">
+                                <i
+                                    class="fa-brands fa-python icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Python</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Data Science, Web Development</p>
@@ -245,9 +285,8 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/84x84">
+                                <i
+                                    class="fa-brands fa-js icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">JavaScript</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Frontend & Backend Development</p>
@@ -257,9 +296,19 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/88x88">
+                                <i
+                                    class="fa-brands fa-php icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
+                                <div class="flex-grow">
+                                    <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">PHP</h2>
+                                    <p class="text-gray-500 dark:text-gray-400">Frontend & Backend Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div
+                                class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
+                                <i
+                                    class="fa-brands fa-cuttlefish icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">C++</h2>
                                     <p class="text-gray-500 dark:text-gray-400">System Programming</p>
@@ -269,9 +318,8 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/90x90">
+                                <i
+                                    class="fa-solid fa-code icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">HTML & CSS</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Frontend Development</p>
@@ -281,21 +329,19 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/94x94">
+                                <i
+                                    class="fa-brands fa-java icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Java</h2>
-                                    <p class="text-gray-500 dark:text-gray-400">Android Development</p>
+                                    <p class="text-gray-500 dark:text-gray-400">System Programming</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/98x98">
+                                <i
+                                    class="fa-solid fa-database icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">SQL</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Database Management</p>
@@ -305,9 +351,8 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/100x100">
+                                <i
+                                    class="fa-brands fa-react icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">React</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Frontend Framework</p>
@@ -317,9 +362,19 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/104x104">
+                                <i
+                                    class="fa-brands fa-laravel icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
+                                <div class="flex-grow">
+                                    <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Laravel</h2>
+                                    <p class="text-gray-500 dark:text-gray-400">Frontend & Backend Framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div
+                                class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
+                                <i
+                                    class="fa-brands fa-node-js icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Node.js</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Backend Development</p>
@@ -329,14 +384,51 @@
                         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                             <div
                                 class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
-                                <img alt="skill"
-                                    class="w-16 h-16 bg-gray-100 dark:bg-gray-800 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                    src="https://dummyimage.com/108x108">
+                                <i
+                                    class="fa-brands fa-docker icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
                                 <div class="flex-grow">
                                     <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Docker</h2>
                                     <p class="text-gray-500 dark:text-gray-400">Containerization</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div
+                                class="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg">
+                                <i
+                                    class="fa-brands fa-git icon-size object-center mr-4 text-gray-900 dark:text-gray-100"></i>
+                                <div class="flex-grow">
+                                    <h2 class="text-gray-900 dark:text-gray-100 title-font font-medium">Git</h2>
+                                    <p class="text-gray-500 dark:text-gray-400">Version Control System</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- GitHub Contribution Section -->
+            <section id="github-contributions" class="text-gray-600 dark:text-gray-300 body-font py-10">
+                <div class="container mx-auto text-center">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
+                        <i class="fa-brands fa-github"></i> GitHub Contributions
+                    </h1>
+                    <p id="contribution-total" class="text-base text-gray-600 dark:text-gray-400 mt-2">Loading...</p>
+                    <p class="text-sm text-indigo-500 mt-2">
+                        <a href="https://github.com/aryddntaabbss" target="_blank" class="hover:underline">Visit my
+                            GitHub
+                            Profile</a>
+                    </p>
+                    <div class="bg-gray-200 dark:bg-gray-800 p-5 rounded-lg mt-8">
+
+                        <div id="contribution-total" class="text-center font-semibold mb-4">
+                            <!-- Contribution total will be added here by JavaScript -->
+                        </div>
+                        <div id="contribution-grid" class="grid grid-cols-52 gap-1 mb-4">
+                            <!-- Contribution boxes will be added here by JavaScript -->
                         </div>
                     </div>
                 </div>
@@ -344,15 +436,14 @@
 
             <!-- Projects -->
             <section id="projects" class="text-gray-600 dark:text-gray-300 body-font">
-                <div class="container px-5 py-24 mx-auto">
+                <div class="container px-5 py-16 mx-auto">
                     <!-- Section Header -->
                     <div class="flex flex-wrap w-full mb-20">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
                             <h1
                                 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
-                                My Projects
+                                <i class="fa-solid fa-medal"></i> My Projects
                             </h1>
-                            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
                         </div>
                         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-400">
                             A collection of my recent projects and work that showcase my skills, creativity, and
@@ -432,12 +523,11 @@
             </section>
 
             <!-- Contact -->
-            <section id="contact" class="text-gray-600 dark:text-gray-300 body-font relative">
+            <section id="contact" class="text-gray-600 dark:text-gray-300 py-16 body-font relative">
                 <div class="lg:w-full w-full lg:mb-0 text-center">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
-                        Contact
+                        <i class="fa-solid fa-envelope"></i> Contact
                     </h1>
-                    <div class="mt-2 h-1 w-20 bg-indigo-500 rounded mx-auto"></div>
                 </div>
 
                 <div class="container px-5 py-14 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -565,6 +655,7 @@
 
         <!-- Scripts -->
         <script src="./js/script.js"></script>
+        <script src="./js/apiGithub.js"></script>
     </body>
 
 </html>

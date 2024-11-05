@@ -73,3 +73,27 @@
 #scrollTopBtn.show {
   display: block;
 }
+
+/* Base grid styles for larger screens */
+#contribution-grid {
+  display: grid;
+  grid-template-columns: auto repeat(52, minmax(0, 1fr)); /* One column for day labels, 52 for weeks */
+  gap: 2px;
+  align-items: start;
+}
+
+#contribution-grid div {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.flex.justify-start {
+  grid-column: span 53;
+  display: flex;
+  justify-content: start;
+}
+
+.icon-size {
+  font-size: 20px;
+}
