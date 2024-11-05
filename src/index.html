@@ -7,23 +7,9 @@
         <title>My Portfolio</title>
         <link href="../dist/styles.css" rel="stylesheet">
 
-        <style>
-            #scrollTopBtn {
-                display: none;
-                /* Awalnya disembunyikan */
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                z-index: 1000;
-                cursor: pointer;
-                transition: opacity 0.3s;
-            }
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-            #scrollTopBtn.show {
-                display: block;
-                opacity: 1;
-            }
-        </style>
     </head>
 
     <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
@@ -37,43 +23,38 @@
                 <nav class="hidden md:flex space-x-4">
                     <ul class="flex space-x-4">
                         <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">About</a></li>
-                        <li><a href="#skil" class="hover:text-blue-600 dark:hover:text-blue-400">Skill</a></li>
+                        <li><a href="#skill" class="hover:text-blue-600 dark:hover:text-blue-400">Skill</a></li>
                         <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400">Projects</a></li>
                         <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a></li>
                     </ul>
                 </nav>
 
-                <!-- Theme Toggle Button (Desktop) -->
-                <button id="theme-toggle" class="ml-4 p-2 bg-gray-200 rounded dark:bg-gray-700 hidden md:inline-flex">
-                    Toggle Theme
+                <!-- Theme Toggle Button for Desktop -->
+                <button id="theme-toggle" class="theme-toggle shadow-md">
+                    <span id="icon-light" class="icon icon-light"><i class="fa-solid fa-sun"></i></span>
+                    <span id="icon-dark" class="icon icon-dark"><i class="fa-solid fa-moon"></i></span>
                 </button>
 
-                <!-- Hamburger Menu for Mobile -->
+                <!-- Tombol Toggle untuk Mobile Menu -->
                 <div class="md:hidden flex items-center">
-                    <button id="theme-toggle-mobile" class="p-2 bg-gray-200 rounded dark:bg-gray-700 mr-2">
-                        Toggle Theme
-                    </button>
-                    <button id="menu-toggle" class="p-2 bg-gray-200 rounded dark:bg-gray-700 focus:outline-none">
-                        <!-- Hamburger Icon -->
-                        <svg class="w-6 h-6 text-gray-800 dark:text-gray-300" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="menu-toggle" class="px-2 py-2 bg-gray-200 rounded dark:bg-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Mobile Menu (hidden by default) -->
-            <nav id="mobile-menu" class="md:hidden bg-white dark:bg-gray-800 p-5 hidden">
+            <!-- Menu Navigasi Mobile yang Tersembunyi -->
+            <nav id="mobile-menu" class="md:hidden bg-white dark:bg-gray-800 p-5">
                 <ul class="flex flex-col space-y-4">
                     <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">About</a></li>
-                    <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">Skill</a></li>
+                    <li><a href="#skill" class="hover:text-blue-600 dark:hover:text-blue-400">Skill</a></li>
                     <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400">Projects</a></li>
                     <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
+
 
         <!-- Main Content -->
         <main class="container mx-auto my-10 p-5 flex-grow">
@@ -109,7 +90,7 @@
             </section>
 
             <!-- About -->
-            <section class="text-gray-600 dark:text-gray-300 body-font">
+            <section id="about" class="text-gray-600 dark:text-gray-300 body-font">
 
                 <div class="container px-5 pt-20 mx-auto flex flex-col">
                     <div class="lg:w-full w-full lg:mb-0 text-center">
@@ -232,7 +213,7 @@
             </section>
 
             <!-- Skill -->
-            <section class="text-gray-600 dark:text-gray-300 body-font">
+            <section id="skill" class="text-gray-600 dark:text-gray-300 body-font">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="lg:w-full w-full pb-10 lg:mb-0 text-center">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
@@ -362,7 +343,7 @@
             </section>
 
             <!-- Projects -->
-            <section class="text-gray-600 dark:text-gray-300 body-font">
+            <section id="projects" class="text-gray-600 dark:text-gray-300 body-font">
                 <div class="container px-5 py-24 mx-auto">
                     <!-- Section Header -->
                     <div class="flex flex-wrap w-full mb-20">
@@ -451,7 +432,7 @@
             </section>
 
             <!-- Contact -->
-            <section class="text-gray-600 dark:text-gray-300 body-font relative">
+            <section id="contact" class="text-gray-600 dark:text-gray-300 body-font relative">
                 <div class="lg:w-full w-full lg:mb-0 text-center">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-100">
                         Contact
@@ -527,11 +508,12 @@
                 </div>
             </section>
 
-            <!-- Footer -->
+            <!-- Scroll on top -->
             <button id="scrollTopBtn"
-                class="hidden fixed bottom-10 right-10 bg-indigo-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 focus:outline-none">
+                class="hidden fixed bottom-10 right-10 bg-indigo-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600">
                 ↑
             </button>
+
 
 
         </main>
@@ -582,60 +564,7 @@
         </footer>
 
         <!-- Scripts -->
-        <script>
-            const themeToggleButtons = [ document.getElementById( 'theme-toggle' ), document.getElementById( 'theme-toggle-mobile' ) ];
-            const htmlElement = document.documentElement;
-
-            // Initialize theme from localStorage
-            if ( localStorage.getItem( 'theme' ) === 'dark' )
-            {
-                htmlElement.classList.add( 'dark' );
-            } else
-            {
-                htmlElement.classList.remove( 'dark' );
-            }
-
-            // Toggle theme and save preference
-            themeToggleButtons.forEach( button =>
-            {
-                button.addEventListener( 'click', () =>
-                {
-                    htmlElement.classList.toggle( 'dark' );
-                    localStorage.setItem( 'theme', htmlElement.classList.contains( 'dark' ) ? 'dark' : 'light' );
-                } );
-            } );
-
-            // Mobile menu toggle
-            const menuToggle = document.getElementById( 'menu-toggle' );
-            const mobileMenu = document.getElementById( 'mobile-menu' );
-
-            menuToggle.addEventListener( 'click', () =>
-            {
-                mobileMenu.classList.toggle( 'hidden' );
-            } );
-
-            // Get the button
-            const scrollTopBtn = document.getElementById( "scrollTopBtn" );
-
-            // Show the button when scrolling down 100px
-            window.onscroll = function ()
-            {
-                if ( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 )
-                {
-                    scrollTopBtn.classList.add( "show" );
-                } else
-                {
-                    scrollTopBtn.classList.remove( "show" );
-                }
-            };
-
-            // Scroll to top when button is clicked
-            scrollTopBtn.onclick = function ()
-            {
-                window.scrollTo( { top: 0, behavior: 'smooth' } );
-            };
-
-        </script>
+        <script src="./js/script.js"></script>
     </body>
 
 </html>
