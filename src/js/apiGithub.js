@@ -1,6 +1,7 @@
 async function fetchGitHubContributions ()
 {
     const username = "aryddntaabbss";
+    const token = "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";
 
     const query = `
     {
