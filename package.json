@@ -14,10 +14,6 @@
   },
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
     "watch": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css --watch"
-  },
-  "engines": {
-    "node": ">=14"
   }
 }
