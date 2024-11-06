@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-toggle {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0 5px;
+}
+
+.icon {
+  font-size: 16px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Light mode: Menampilkan ikon matahari di kiri dan menyembunyikan ikon bulan */
+.icon-light {
+  color: #ffdd57;
+  /* Warna Matahari */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-dark {
+  color: #4b5563;
+  /* Warna Bulan */
+  opacity: 0;
+  transform: translateX(-10px);
+  /* Geser ikon bulan keluar */
+}
+
+/* Dark mode: Menampilkan ikon bulan di kanan dan menyembunyikan ikon matahari */
+.dark .theme-toggle {
+  background-color: #33333300;
+  border-color: #555;
+}
+
+.dark .icon-light {
+  opacity: 0;
+  transform: translateX(10px);
+  /* Geser ikon matahari keluar */
+}
+
+.dark .icon-dark {
+  opacity: 1;
+  transform: translateX(0);
+  /* Tampilkan ikon bulan di posisi kanan */
+}
+
+/* Menyembunyikan menu secara default dan mengatur transisi */
+#mobile-menu.hidden {
+  display: none;
+}
+
+#mobile-menu.block {
+  display: block;
+}
+
+.flex.justify-start {
+  grid-column: span 53;
+  display: flex;
+  justify-content: start;
+}
+
+.icon-size {
+  font-size: 20px;
+}
