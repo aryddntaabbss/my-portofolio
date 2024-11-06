@@ -1,8 +1,8 @@
 {
-  "name": "portofolio",
+  "name": "agil-aryaddinata-abbas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is My-Portofolio",
+  "main": "./src/js/script.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
