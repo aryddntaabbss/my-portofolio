@@ -14,5 +14,8 @@
   "scripts": {
     "build": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css --minify",
     "watch": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css --watch"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
   }
 }
